@@ -1,3 +1,163 @@
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes flipInX {
+  from {
+
+    transform:  rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  40% {
+    transform: rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  60% {
+    transform:  rotate3d(1, 0, 0, 10deg);
+    
+  }
+
+  80% {
+    transform:  rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    transform: perspective(0px);
+  }
+}
+
+.flipInX {
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+ animation-delay: 2.8s;
+}
+
+
+
+@keyframes flash{
+  from, 50%, 100% {
+    opacity: 1;
+  }
+0%{
+    opacity: 0;
+}
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash_blue {
+   transform: translate(353.000000px, 122.000000px);
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  animation-delay: 2.8s;
+}
+
+.flash_red {
+   transform: translate(350.000000px, 159.000000px);
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  animation-delay: 2.8s;
+}
+
+.flash_orange {
+   transform: translate(405.000000px, 864.000000px);
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  animation-delay: 2.8s;
+}
+
+.flash_purp {
+   transform: translate(322.000000px, 320.000000px);
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  animation-delay: 2.8s;
+}
+
+.flash_green {
+   transform: translate(150.000000px, 625.000000px);
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  animation-delay: 2.8s;
+}
+
+/*@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3) translate(353.000000px, 122.000000px);
+    transform: scale3d(.3, .3, .3) translate(353.000000px, 122.000000px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3) translate(353.000000px, 122.000000px);
+    transform: scale3d(.3, .3, .3) translate(353.000000px, 122.000000px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  transform-origin: 70% 70%;
+  transform: translate(353.000000px, 122.000000px);
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  
+}
+
+
+@keyframes flipInX2 {
+  from {
+
+    transform:  translate(353.000000px, 122.000000px)  rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  40% {
+    transform: rotate3d(1, 0, 0, -20deg)   translate(353.000000px, 122.000000px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  60% {
+    transform:  rotate3d(1, 0, 0, 10deg)   translate(353.000000px, 122.000000px);
+    
+  }
+
+  80% {
+    transform:  rotate3d(1, 0, 0, -5deg)   translate(353.000000px, 122.000000px);
+  }
+
+  100% {
+    transform: perspective(0px)    translate(353.000000px, 122.000000px);
+  }
+}
+
+.flipInX2 {
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+ animation-delay: 2.8s;
+}
+*/
+
 .mid{
       width: 800px;
       height: 1342px;
@@ -6,7 +166,7 @@ margin: 0 auto;
 }
 img{
     width: 670px;
-        animation: img_water 1.5s 2s normal both;
+        animation: img_water 1s 2s normal both;
 
 }
 
@@ -32,7 +192,7 @@ position: absolute;
 }
 .path_red{
 
-  stroke-dasharray: 1650;
+  stroke-dasharray: 1600;
   stroke-dashoffset: 0;
    animation: dash_red 3s normal none;
   animation-timing-function: ease-in-out;
@@ -41,7 +201,7 @@ position: absolute;
 @keyframes dash_red {
   from {
     animation-delay: 1s;
-    stroke-dashoffset: 1650;
+    stroke-dashoffset: 1600;
   }
   to {
     stroke-dashoffset: 0;
@@ -104,169 +264,8 @@ position: absolute;
 
 
 
-@-webkit-keyframes flipInX {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
 
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  100% {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-@keyframes flipInX {
-  from {
-
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-   
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  100% {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-
-/*красно-фиолетовая*/
-#Oval_red,
-#Oval_purp,
-
-/*красно-зеленая*/
-#Oval_red4,
-#Oval_green2,
-
-/*зелено-оранжевая*/
-#Oval_green3,
-#Oval_orange1,
-
-/*красно-оранжевая*/
-#Oval_red3,
-#Oval_orange,
-
-/*круговая*/
-#Oval_purp_3s,
-#Oval_orange_3s,
-#Oval_blue_3s,
-
-/*красно-синяя*/
-#Oval_blue,
-#Oval_red2,
-
-/*сине-зеленая*/
-#Oval_blue2,
-#Oval_green,
-
-/*purp-line*/
-#Oval-63,
-#Oval-62,
-#Oval-61,
-#Oval-60,
-#Oval-59,
-#Oval-58,
-#Oval-57,
-#Oval-56,
-#Oval-55,
-#Oval-54,
-#Oval-53,
-#Oval-52,
-#Oval-51,
-
-/*green-line*/
-#Oval-50,
-#Oval-49,
-#Oval-48,
-#Oval-47,
-#Oval-46,
-#Oval-45,
-#Oval-44,
-
-/*red-line*/
-#Oval-43,
-#Oval-42,
-#Oval-41,
-#Oval-40,
-#Oval-39,
-#Oval-38,
-#Oval-37,
-#Oval-36,
-#Oval-35,
-#Oval-34,
-#Oval-33,
-#Oval-31,
-#Oval-30,
-#Oval-29,
-#Oval-28,
-
-/*orange-line*/
-#Oval-27,
-#Oval-26,
-#Oval-25,
-#Oval-24,
-#Oval-23,
-#Oval-22,
-
-
-/*blue-line*/
-#Oval-21,
-#Oval-20,
-#Oval-19,
-#Oval-16,
-#Oval-15,
-#Oval-13,
-#Oval-12,
-#Oval-8,
-#Oval-7,
-#Oval-6,
-#Oval-5,
-#Oval-4,
-#Oval-3,
-#Oval-2,
-#Oval-1
+.origin
 {
   transform: scale(0);
   transform-origin: 50% 50%;
