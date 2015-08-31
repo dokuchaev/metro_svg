@@ -1,14 +1,35 @@
-#svg{
-  width: 50%;
+.mid{
+      width: 800px;
+      height: 1342px;
+
 margin: 0 auto;
+}
+img{
+    width: 670px;
+        animation: img_water 1.5s 2s normal both;
 
 }
 
+@keyframes img_water {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
 
+#svg{
 
+z-index: 1;
+position: relative;
+}
 
+.water_layer {
 
-
+  margin-top: 206px;
+position: absolute;
+}
 .path_red{
 
   stroke-dasharray: 1650;
@@ -81,26 +102,7 @@ margin: 0 auto;
 }
 
 
-/*#Rectangle-7{
-    transform-origin: 100% 0%;
-animation: rotat .5s normal none;
-  animation-timing-function: ease-in-out;
-  transform: rotate(-20deg);
-}
 
-
-@keyframes rotat {
-
-  0% {
-   width: 0px;
-  }  
- 50% {
-   width: 15px;
-  }
-  100% {
-    width: 33px;
-  }
-}*/
 
 @-webkit-keyframes flipInX {
   from {
@@ -168,28 +170,7 @@ animation: rotat .5s normal none;
     transform: perspective(400px);
   }
 }
-/*
-.logo
-{
 
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  
-  animation: flipInX 1s  normal forwards;
-  animation-delay: 2.7s;
-}
-
-#logo_metro_purp_down{
-width:100px; height:50px; position:absolute; top:455px;
-
-}
-
-
-#Oval-1:hover
-{
-  cursor: pointer;
-transform: scale(10);
-}*/
 
 /*красно-фиолетовая*/
 #Oval_red,
@@ -221,6 +202,9 @@ transform: scale(10);
 #Oval_green,
 
 /*purp-line*/
+#Oval-63,
+#Oval-62,
+#Oval-61,
 #Oval-60,
 #Oval-59,
 #Oval-58,
@@ -289,16 +273,6 @@ transform: scale(10);
   animation-timing-function: ease-in-out;
 }
 
-/*
-#s-green-orange,
-#s-red-orange
-{
-
-transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s  normal forwards;
-
-}*/
 
 
 @keyframes bounceInS2 {
@@ -429,131 +403,6 @@ transform-origin: 50% 50%;
 
 
 
-/*@keyframes bounceIn {
-  from, 20%, 40%, 60%, 80%, 100% {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-
-  20% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(.9, .9, .9);
-    transform: scale3d(.9, .9, .9);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(1.03, 1.03, 1.03);
-    transform: scale3d(1.03, 1.03, 1.03);
-  }
-
-  80% {
-    -webkit-transform: scale3d(.97, .97, .97);
-    transform: scale3d(.97, .97, .97);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1) ;
-    transform: scale3d(1, 1, 1) translateX(.2px);
-  }
-}
-
-
-@keyframes bounceInS {
-  from, 20%, 40%, 60%, 80%, 100% {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3) rotate(-121deg);
-  }
-
-  20% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1) rotate(-121deg) ;
-  }
-
-  40% {
-    -webkit-transform: scale3d(.9, .9, .9);
-    transform: scale3d(.9, .9, .9) rotate(-121deg) ;
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(1.03, 1.03, 1.03);
-    transform: scale3d(1.03, 1.03, 1.03) rotate(-121deg);
-  }
-
-  80% {
-    -webkit-transform: scale3d(.97, .97, .97);
-    transform: scale3d(.97, .97, .97) rotate(-121deg);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1) rotate(-121deg) translateX(2px);
-  }
-}
-
-@keyframes bounceInSO {
-  from, 20%, 40%, 60%, 80%, 100% {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3) rotate(119deg);
-  }
-
-  20% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1) rotate(119deg);
-  }
-
-  40% {
-    -webkit-transform: scale3d(.9, .9, .9);
-    transform: scale3d(.9, .9, .9) rotate(119deg);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(1.03, 1.03, 1.03);
-    transform: scale3d(1.03, 1.03, 1.03) rotate(119deg);
-  }
-
-  80% {
-    -webkit-transform: scale3d(.97, .97, .97);
-    transform: scale3d(.97, .97, .97) rotate(119deg);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1) rotate(119deg);
-  }
-}*/
-
-
-
 
 @keyframes stretch {
   0% {
@@ -570,27 +419,6 @@ transform-origin: 50% 50%;
   }
 }
 
-
-
-/*#Oval-21{
-  animation: stretch 1s 1.6s normal forwards;
-}
-
-#Oval-20{
-  animation: stretch 1s 1.5s normal forwards;
-}
-
-#Oval-19{
-  animation: stretch 1s 1.4s normal forwards;
-}
-
-#Oval-18{
-  animation: stretch 1s 1.3s normal forwards;
-}
-
-#Oval-17{
-  animation: stretch 1s 1.2s normal forwards;
-}*/
 
 
 
@@ -668,7 +496,10 @@ transform-origin: 50% 50%;
 #Oval-27,
 #Oval-28,
 #Oval-44,
-#Oval-60{
+#Oval-60,
+#Oval-61,
+#Oval-62,
+#Oval-63{
   animation: stretch 1s  normal both;
 }
 
@@ -693,27 +524,7 @@ transform-origin: 50% 50%;
 }
 
 
-/*
-#Oval-11{
-  animation: stretch 1s .7s normal forwards;
-}
 
-
-#Oval-10{
-  animation: stretch 1s .8s normal forwards;
-}
-
-
-#Oval-9{
-  animation: stretch 1s .9s normal forwards;
-}*/
-
-/*#Oval-blue-2{
-	  animation: stretch 1s 1s normal forwards;
-}
-#Oval-red-2{
-	  animation: stretch 1s 1s normal forwards;
-}*/
 #Oval-16{
   
   animation: stretch 1s .7s normal forwards;
@@ -848,327 +659,3 @@ transform-origin: 50% 50%;
 
 
 
-
-
-
-
-
-
-
-
-/*
-
-
-#Oval-15,#Oval-14,#Oval-13,#Oval-12,#Oval-11,#Oval-10,#Oval-9,#Oval-8,#Oval-7,#Oval-6,#Oval-5,#Oval-4,#Oval-3,#Oval-2,#Oval-1{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-#Oval-14{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s .1s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-#Oval-13{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s .5s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-#Oval-12{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s .6s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-#Oval-11{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s .7s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-#Oval-10{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s .8s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-#Oval-9{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s .9s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-#Oval-8{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s 1.7s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-#Oval-7{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s 1.8s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-#Oval-6{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s 1.9s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-#Oval-5{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s 2s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-#Oval-4{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s 2.1s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-#Oval-3{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s 2.2s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-#Oval-2{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s 2.3s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-#Oval-1{
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-  animation: stretch 1s 2.4s normal forwards;
-}
-
-
-@keyframes stretch {
-  0% {
-    transform: scale(0);
-  }
- 50% {
-    transform: scale(1.5); 
-  }
-  100% {
-    transform: scale(1);
-  }
-}*/
-
-
-
-#parnas{
-   transform: scale(0);
-  transform-origin: 50% 50%;
-  animation-timing-function: ease-in-out;
-   animation: stretch 1s  normal forwards;
-}
